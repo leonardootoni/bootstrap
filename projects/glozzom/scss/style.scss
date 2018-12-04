@@ -1,0 +1,19 @@
+//set navlinks with 1rem space and uppercase text
+.navbar {
+    .nav-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+//define border bottom for active nav-item
+.navbar {
+    .nav-item.active {
+        .nav-link {
+            padding-bottom: 0.2rem;
+            border-bottom: rgb(105, 103, 103) 3px solid;
+        }
+    }
+}
