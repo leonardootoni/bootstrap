@@ -6,7 +6,7 @@ $('body').scrollspy({
     target: '#main-nav'
 });
 
-//grabs the #main-nav clicks and put the delay effect
+//grabs the #main-nav clicks and put the delay effect used on scrollspy
 $("#main-nav a").on("click", function (event) {
     if (this.hash) {
         event.preventDefault();
