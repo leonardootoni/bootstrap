@@ -45,6 +45,138 @@
             </ul>
         </div>
     </nav>
+    <!--SHOWCASE SLIDER-->
+    <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                <li class="" data-target="#myCarousel" data-slide-to="1"></li>
+                <li class="" data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                            <h1 class="display-3">Heading One</h1>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
+                                distinctio exercitationem quam excepturi commodi provident laudantium quo iure ab odio.</p>
+                            <a href="#" class="btn btn-danger btn-lg">Sign up Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block mb-5">
+                            <h1 class="display-3">Heading Two</h1>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
+                                distinctio exercitationem quam excepturi commodi provident laudantium quo iure ab odio.</p>
+                            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                            <h1 class="display-3">Heading Three</h1>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
+                                distinctio exercitationem quam excepturi commodi provident laudantium quo iure ab odio.</p>
+                            <a href="#" class="btn btn-success btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+                <span class="fas fa-3x fa-angle-left"></span>
+            </a>
+            <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+                <span class="fas fa-3x fa-angle-right"></span>
+            </a>
+        </div>
+    </section>
+    <!-- HOME ICON SECTION -->
+    <section id="home-icons" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cog fa-3x mb-2"></i>
+                    <h3>Turning Gears</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet, quibusdam eligendi
+                        impedit recusandae dolor!</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cloud fa-3x mb-2"></i>
+                    <h3>Sending Data</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet, quibusdam eligendi
+                        impedit recusandae dolor!</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cart-plus fa-3x mb-2"></i>
+                    <h3>Making Money</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet, quibusdam eligendi
+                        impedit recusandae dolor!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HOME HEADING SECTION -->
+    <section id="home-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>Are You Ready To Get Started?</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                            inventore molestias nemo quibusdam exercitationem sapiente voluptas similique iusto atque
+                            tenetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INFO SECTION -->
+    <section id="info" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet consequatur, harum mollitia
+                        autem
+                        fuga numquam perferendis aliquid aspernatur temporibus suscipit.</p>
+                    <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="img/laptop.png" alt="Laptop imag" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO PLAY -->
+    <section id="video-play">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container p-5">
+                        <a id="link-video-player" href="#" class="video" data-toggle="modal" data-target="#videoModal"
+                            data-video="http://www.youtube.com/embed/-sUXMzkh-jI">
+                            <i class="fas fa-play fa-3x"></i>
+                        </a>
+                        <h1>See What We Do</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe id="youtube-video-iframe" tabindex="-1" height="350" width="100%" src="#" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery and BootStrap JS begin -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
