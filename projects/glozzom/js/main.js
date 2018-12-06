@@ -1,4 +1,4 @@
-//get the current year for the copyright
+//Set the current year int the footer
 $('#footer-year').text(new Date().getFullYear());
 
 //configure slider <<carousel>>
@@ -37,4 +37,15 @@ $("#videoModal").on('hidden.bs.modal', function (e) {
 $("#link-video-player").on("click", function (event) {
     const link = $("#link-video-player").attr("data-video");
     const iframe = $("#youtube-video-iframe").attr("src", link);
+});
+
+//Lightbox init
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+//Blocks the form submit action
+$("#submit-form-button").click(function (event) {
+    event.preventDefault();
 });
