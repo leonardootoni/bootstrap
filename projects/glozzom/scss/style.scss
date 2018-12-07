@@ -16,7 +16,7 @@ body {
 .navbar {
     .nav-item.active {
         .nav-link {
-            padding-bottom: 0.2rem;
+            padding-bottom: 0.1rem;
             border-bottom: rgb(105, 103, 103) 3px solid;
         }
     }
@@ -52,6 +52,7 @@ body {
     color: #fff;
 }
 
+
 .dark-overlay {
     position: absolute;
     top: 0;
@@ -78,4 +79,52 @@ body {
 
 #link-video-player:hover {
     color: rgb(167, 47, 26);
+}
+
+#page-header {
+    height: 200px;
+    background: url(../img/image1.jpg);
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 50px;
+}
+
+#about-img {
+    margin-top: -50px
+}
+
+//Changes the Slick slider dots color on the page about.html
+.slick-dots {
+    li.slick-active {
+        button::before {
+            color: #fff;
+        }
+    }
+}
+
+//Changes the Slick slider dots size on the page about.html
+.slick-dots {
+    li {
+        button::before {
+            font-size: .8rem;
+        }
+    }
+}
+
+//Services FAQ Accordion
+#faq {
+    .card {
+        border: #444;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .card-header,
+    .card-body {
+        background: #333;
+    }
 }

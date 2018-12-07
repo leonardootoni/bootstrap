@@ -8,7 +8,7 @@ body {
   padding-right: 1rem !important; }
 
 .navbar .nav-item.active .nav-link {
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.1rem;
   border-bottom: #696767 3px solid; }
 
 .carousel-item {
@@ -57,3 +57,31 @@ body {
 
 #link-video-player:hover {
   color: #a72f1a; }
+
+#page-header {
+  height: 200px;
+  background: url(../img/image1.jpg);
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  padding-top: 50px; }
+
+#about-img {
+  margin-top: -50px; }
+
+.slick-dots li.slick-active button::before {
+  color: #fff; }
+
+.slick-dots li button::before {
+  font-size: .8rem; }
+
+#faq .card {
+  border: #444; }
+
+#faq a {
+  color: #fff;
+  text-decoration: none; }
+
+#faq .card-header,
+#faq .card-body {
+  background: #333; }
