@@ -82,6 +82,12 @@ body {
   color: #fff;
   text-decoration: none; }
 
-#faq .card-header,
-#faq .card-body {
+#faq .card-header {
   background: #333; }
+
+#faq .card-body {
+  background: #444; }
+
+#main-footer {
+  background-color: #000;
+  color: #fff; }
