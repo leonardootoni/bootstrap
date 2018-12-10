@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
-            <a href="../index.html" class="navbar-brand">Blogen</a>
+            <a href="../index.html" class="navbar-brand brand-style">Blogen</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,11 +32,11 @@
                     <li class="nav-item px-2">
                         <a href="posts.html" class="nav-link">Posts</a>
                     </li>
-                    <li class="nav-item px-2 ">
+                    <li class="nav-item px-2">
                         <a href="categories.html" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="users.html" class="nav-link active">Users</a>
+                        <a href="users.html" class="nav-link">Users</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -61,99 +61,82 @@
         </div>
     </nav>
     <!-- HEADER -->
-    <header id="main-header" class="py-2 bg-warning text-white">
+    <header id="main-header" class="py-2 bg-primary text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1><i class="fas fa-users"></i> Users</h1>
+                    <h1><i class="fas fa-cog"></i> Settings</h1>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- SEARCH -->
-    <section id="search" class="py-4 mb-4 bg-light">
+    <!-- ACTIONS -->
+    <section id="action" class="py-4 mb-4 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 ml-auto">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Users...">
-                        <div class="input-group-append">
-                            <button class="btn btn-warning">Search</button>
-                        </div>
-                    </div>
+                <div class="col-md-3">
+                    <a href="../index.html" class="btn btn-light btn-block">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../index.html" class="btn btn-primary btn-block">
+                        <i class="fas fa-check"></i> Save Changes
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- USERS -->
-    <section id="users">
-        <div class="container mb-3">
+    <!-- SETTINGS -->
+    <section id="settings">
+        <div class="container">
             <div class="row">
-                <div class="col-md">
+                <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Users</h4>
+                            <h4>Edit Settings</h4>
                         </div>
-                        <table class="table table-striped">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Login</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Leonardo Otoni</td>
-                                    <td>leonardootoni@gmail.com</td>
-                                    <td>leonardo.otoni</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Karen Parker Willians</td>
-                                    <td>karen-parker@hotmail.com</td>
-                                    <td>karen.willians</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-secondary">
-                                            <i class="fas fa-angle-double-right"></i> Details
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- PAGINATION -->
-                        <nav class="ml-4">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a href="#" class="page-link">Previous</a>
-                                </li>
-                                <li class="page-item active">
-                                    <a href="#" class="page-link">1</a>
-                                </li>
-                                <li class="page-item disabled">
-                                    <a href="#" class="page-link">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="card-body">
+                            <form>
+                                <fieldset class="form-group">
+                                    <legend>Allow User Registation</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="a" class="form-check-group" checked>
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="a" class="form-check-group"> No
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <legend>Home Page Format</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="homePageRadio" value="posts" class="form-check-group"
+                                                checked>
+                                            Blog Page
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="homePageRadio" value="page" class="form-check-group">
+                                            Home page
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <!-- FOOTER -->
-    <footer id="main-footer fixed-bottom" class="text-center text-white p-4 bg-dark">
+    <footer id="main-footer" class="text-center text-white p-4 bg-dark">
         <div class="containter">
             <div class="row">
                 <div class="col">
@@ -171,9 +154,15 @@
         crossorigin="anonymous"></script>
     <!-- jQuery and BootStrap JS end -->
 
+    <!-- CKEDITOR -->
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+
     <script>
         //get the current year for the copyright
         $('#footer-year').text(new Date().getFullYear())
+
+        //initialize wysiwyg Editor
+        CKEDITOR.replace('editor1');
     </script>
 
 </body>

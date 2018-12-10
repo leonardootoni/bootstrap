@@ -1,3 +1,23 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+
+    body {
+        overflow-y: scroll;
+        margin-bottom: 15vh;
+        /* Margin bottom by footer height */
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
 //Brand site style 
 .navbar-brand {
     color: rgb(216, 205, 205) !important;

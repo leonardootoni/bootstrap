@@ -1,3 +1,17 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+  html body {
+    overflow-y: scroll;
+    margin-bottom: 15vh;
+    /* Margin bottom by footer height */ }
+    html body footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+
 .navbar-brand {
   color: #d8cdcd !important;
   background-color: #be1e18;
