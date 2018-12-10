@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FontAwesome / Bootstrap references -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- FontAwesome / Bootstrap end -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bootstrap Theme</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand brand-style">Blogen</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="../index.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="posts.html" class="nav-link">Posts</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="categories.html" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i> leonardo.otoni
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="html/profile.html" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i> Profile
+                            </a>
+                            <a href="html/profile.html" class="dropdown-item">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <a href="html/login.html" class="dropdown-item">
+                                <i class="fas fa-sign-out-alt"></i> Log-out
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><i class=""></i> Post One</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ACTIONS -->
+    <section id="action" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../index.html" class="btn btn-light btn-block">
+                        <i class="fas fa-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../index.html" class="btn btn-primary btn-block">
+                        <i class="fas fa-check"></i> Save Changes
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../index.html" class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i> Delete Post
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS -->
+    <section id="details">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Edit Post</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input type="text" class="form-control" value="Post one">
+                                </div>
+                                <div class="form-group">
+                                    <label for="category">Category</label>
+                                    <select class="form-control">
+                                        <option value="Web Development">Web Development</option>
+                                        <option selected value="Tech Gadgets">Tech Gadgets</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Health & Wellnes">Health & Wellness</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="image">Upload Image</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="image">
+                                        <label for="image" class="custom-file-label">Choose File</label>
+                                    </div>
+                                    <small class="form-text text-muted">Max Size 3mb</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="body">Body</label>
+                                    <textarea name="editor1" class="form-control">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem tempora, quos, incidunt recusandae minima perspiciatis error quis similique suscipit eligendi exercitationem non ipsam provident, nesciunt a temporibus numquam facere perferendis maxime magni ex iste repudiandae? Mollitia possimus voluptatum ullam, assumenda ratione similique tempore. Eos necessitatibus sint aliquam iure, doloremque atque.</textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center text-white p-4 bg-dark">
+        <div class="containter">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy; <span id="footer-year"></span> Blogen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery and BootStrap JS begin -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- jQuery and BootStrap JS end -->
+
+    <!-- CKEDITOR -->
+    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+
+    <script>
+        //get the current year for the copyright
+        $('#footer-year').text(new Date().getFullYear())
+
+        //initialize wysiwyg Editor
+        CKEDITOR.replace('editor1');
+    </script>
+
+</body>
+
+</html>
