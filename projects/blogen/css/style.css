@@ -5,7 +5,6 @@ html {
   min-height: 100%; }
   html body {
     overflow-y: scroll;
-    margin-bottom: 15vh;
     /* Margin bottom by footer height */ }
     html body footer {
       position: absolute;
